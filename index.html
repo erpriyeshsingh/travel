@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">TRAVEL</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="videos.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never Stop to explore</h2>
+        <h3>Life is a journey,not a destination</h3>
+        <p>
+          Every destination you’ll visit leaves its own unique memory.
+          Thinking back of our travels through Sri Lanka, Myanmar, or Petra in Jordan 
+          already gives us the goosebumps. As this travel quote says: Make memories all over the world!
+         </p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="linkedin.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+        <li>
+          <a href="#">Destinations</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const menutoggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menutoggle.addEventListener('click', () => {
+        menutoggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
